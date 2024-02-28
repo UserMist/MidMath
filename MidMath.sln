@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MidMath", "MidMath.csproj", "{FD291DFC-05F6-4E08-8943-52BA4339E051}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MidMathTesting", "..\MidMathTesting\MidMathTesting.csproj", "{3A0FD92C-CE75-4894-839F-28AD827B2BA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD291DFC-05F6-4E08-8943-52BA4339E051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD291DFC-05F6-4E08-8943-52BA4339E051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD291DFC-05F6-4E08-8943-52BA4339E051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD291DFC-05F6-4E08-8943-52BA4339E051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0FD92C-CE75-4894-839F-28AD827B2BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0FD92C-CE75-4894-839F-28AD827B2BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0FD92C-CE75-4894-839F-28AD827B2BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0FD92C-CE75-4894-839F-28AD827B2BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46CBB701-B752-4426-A9F8-901AE26D702E}
+	EndGlobalSection
+EndGlobal
