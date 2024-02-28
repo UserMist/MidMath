@@ -1,11 +1,4 @@
-﻿using MidMath;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MidMath
+﻿namespace MidMath
 {
     /// <summary>
     /// Transformation resizing space along some 2 orthogonal directions. 

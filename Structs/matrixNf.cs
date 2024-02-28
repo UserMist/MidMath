@@ -1,11 +1,4 @@
-﻿using MidMath;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MidMath
+﻿namespace MidMath
 {
     /// <summary>
     /// Transformation replacing unit quantities of space.

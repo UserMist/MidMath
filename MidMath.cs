@@ -1,18 +1,6 @@
-﻿using System.Runtime.CompilerServices;
-using Impl = System.Runtime.CompilerServices.MethodImplAttribute;
+﻿using Impl = System.Runtime.CompilerServices.MethodImplAttribute;
 using static System.Runtime.CompilerServices.MethodImplOptions; 
 
-record Result<ValT>
-{
-    public bool IsValid;
-    public ValT Value;
-
-    public Result() { Value = default; IsValid = false; }
-    public Result(ValT val) { Value = val; IsValid = true; }
-}
-
-
-//todo: rotate(ang), rotateEuler(), lerp (+analogs), map to sphere
 namespace MidMath
 {
     public static class math
@@ -36,7 +24,6 @@ namespace MidMath
         [Impl(AggressiveInlining)] public static float mod(float x, float max) => x - MathF.Floor(x / max) * max;
         [Impl(AggressiveInlining)] public static float fmod(float x, float y) => x % y;
 
-
         /// <summary>
         /// Results in value, that represents how much vector pair is orthogonal and in what plane it lies. Example: x^y = [xy], y^x = -[xy]
         /// Result is a bivector, commonly used to represent rotation inside a plane, although in 3d (pseudo)vector is also valid interpretation.
@@ -44,9 +31,6 @@ namespace MidMath
         [Impl(AggressiveInlining)] public static float3 cross(this float3 a, float3 b) => new float3(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x);
         [Impl(AggressiveInlining)] public static float cross(this float2 a, float2 b) => a.x * b.y - a.y * b.x;
         [Impl(AggressiveInlining)] public static float3 biwedge(this float3 a, float3 b) => -a.cross(b);
-
-        //var yawVec = new float3(MathF.cos(yaw),0, MathF.sin(yaw));
-        //return yawVec* MathF.cos(pitch) + new float3(0, MathF.sin(pitch));
 
         #region floor
         [Impl(AggressiveInlining)] public static float floor(float a) => System.MathF.Floor(a);
